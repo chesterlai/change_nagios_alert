@@ -1,0 +1,15 @@
+This folder is for enable/disable nagios notification
+* please find out your /usr/bin/printf correct path in your host
+  depends on OS
+* run in nagios server
+* edit nagios mointor "hostname" into file hosts
+  you can put multiple line hosts
+* run sudo ./disable_nagios_alert.sh for disable alert(host and service)
+* run sudo ./enable_nagios_alert.sh for enable alert(host and service)
+
+below are the original file's permission
+[~/nagios_alert] $ ls -lah 
+total 20K
+-rwxr-xr-x  1 xxx xxx  444 Sep 20 10:34 disable_nagios_alert.sh
+-rwxr-xr-x  1 xxx xxx  442 Sep 20 10:32 enable_nagios_alert.sh
+-rw-rw-r--  1 xxx xxx  239 Sep 20 10:36 hosts
